@@ -79,8 +79,13 @@ var EmployeeSchema = new schema({
         type: Boolean,
         required: false,
         default: false   
+    },
+    Date:{
+        type:String,
+        required:false,
+        default:""
     }
 
 })
 db.connection();
-module.exports = mongoose.model("data", EmployeeSchema)
+module.exports = mongoose.model("data", EmployeeSchema);
